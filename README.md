@@ -8,7 +8,7 @@ This repository contains  the **supplementary material** and  the **official PyT
 
 ## Demos and results
 
-working on
+<video src="IA-FaceS_demo.mp4" controls="controls" width="500" height="300"></video
 <a name="zbnHJ"></a>
 
 ## Resources
