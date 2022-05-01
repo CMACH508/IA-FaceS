@@ -8,7 +8,7 @@ This repository contains  the **supplementary material** and  the **official PyT
 
 ## Demos and results
 
-<img src = "https://github.com/CMACH508/IA-FaceS/blob/main/IA-FaceS_demo.gif" width="60%"/>
+<img src = "https://github.com/CMACH508/IA-FaceS/blob/main/IA-FaceS_demo.gif" width="100%"/>
 
 
 ## Resources
