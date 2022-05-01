@@ -8,8 +8,8 @@ This repository contains  the **supplementary material** and  the **official PyT
 
 ## Demos and results
 
-<video src="IA-FaceS_demo.mp4" controls="controls" width="500" height="300"></video
-<a name="zbnHJ"></a>
+<img src = "https://github.com/CMACH508/IA-FaceS/blob/main/IA-FaceS_demo.gif" width="60%"/>
+
 
 ## Resources
 
