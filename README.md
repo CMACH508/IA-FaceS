@@ -22,7 +22,7 @@ This repository contains  the **supplementary material** and  the **official PyT
 | **Path**                                                     | **Description**                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [IA-FaceS](https://drive.google.com/drive/folders/1yNWjWhaZztQjMxNwYT8I23auVe-Jep5G?usp=sharing) | Main folder.                                                 |
-| ├  [supplementary_material.pdf](https://drive.google.com/file/d/1UZsyvuJYQtE2McfGHuZ2kfx0SIfKt3AH/view?usp=sharing) | Supplementary file for IA-FaceS.                             |
+| ├  [supplementary_material.pdf](https://drive.google.com/file/d/1WEEloOshLCH119-w_wqu-54U9b_dWwQ7/view?usp=sharing) | Supplementary file for IA-FaceS.                             |
 | ├  [IA-FaceS_demo.mp4](https://drive.google.com/file/d/1Rc6Licj_Trch7kWQhspOzozeJ7jbJgtH/view?usp=sharing)                                      | The video demo of the use of the interactive face editing interface. |
 
 - Baidu Netdisk: 链接: [https://pan.baidu.com/s/1Htsh2ro8SEgN1U_yU_nuOQ](https://pan.baidu.com/s/1Htsh2ro8SEgN1U_yU_nuOQ)  密码: pfhp
