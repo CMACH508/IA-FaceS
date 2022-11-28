@@ -30,7 +30,7 @@ if __name__ == '__main__':
     torch.cuda.set_device(GPU)
     device = torch.device(GPU)
     args = argparse.ArgumentParser(description='PyTorch Template')
-    args.add_argument('-r', '--resume', default='iafaces-celebahq-256.pth', type=str)
+    args.add_argument('--resume', default='iafaces-celebahq-256.pth', type=str)
     args.add_argument('--attr', default='mouth_open', type=str)
     args.add_argument('--data_path', default='data/attr_lists/mouth_close.txt', type=str)
     args.add_argument('--img_dir', default='data/CelebA-HQ-img', type=str)
