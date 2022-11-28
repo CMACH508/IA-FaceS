@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef645c33-4762-49c2-948b-7679c7c23614" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attr_manipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/attr_manipulation.py" afterDir="false" />
-    </list>
+    <list default="true" id="ef645c33-4762-49c2-948b-7679c7c23614" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,12 +181,12 @@
       <option name="presentableId" value="Default" />
       <updated>1669615568013</updated>
       <workItem from="1669615569087" duration="442000" />
-      <workItem from="1669616037238" duration="3613000" />
+      <workItem from="1669616037238" duration="3966000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4055000" />
+    <option name="totallyTimeSpent" value="4408000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

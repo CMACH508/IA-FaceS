@@ -8,15 +8,16 @@ This repository contains  the **supplementary material** and  the **official PyT
 
 > **Abstract:** *Semantic face editing has achieved substantial progress in recent years. However, existing face editing methods, which often encode the entire image into a single code, still have difficulty in enabling flexible editing while keeping high-fidelity reconstruction. The one-code scheme also brings entangled face manipulations and limited flexibility in editing face components. In this paper, we present IA-FaceS, a bidirectional method for disentangled face attribute manipulation as well as flexible, controllable component editing. We propose to embed images onto two branches: one branch computes high- dimensional component-invariant content embedding for capturing face details, and the other provides low-dimensional component-specific embeddings for component manipulations. The two-branch scheme naturally enables high-quality facial component-level editing while keeping faithful reconstruction with details. Moreover, we devise a component adaptive modulation (CAM) module, which integrates component- specific guidance into the decoder and successfully disentangles highly-correlated face components. The single-eye editing is developed for the first time without editing face masks or sketches. According to the experimental results, IA-FaceS establishes a good balance between maintaining image details and performing flexible face manipulation. Both quantitative and qualitative results indicate that the proposed method outperforms the existing methods in reconstruction, face attribute manipulation, and component transfer.*
 
-## Demos and supplementary material
+## Demo video and supplementary file
 
 ---
 
-<img src = "https://github.com/CMACH508/IA-FaceS/blob/main/IA-FaceS_demo.gif" width="100%"/>
+Supplementary materials related to our paper are available at the following links:
 
-Supplementary material related to our paper is available via the following links:
-
-- Google Drive: [Supplementary Material](https://drive.google.com/file/d/1fQTBCDFOWASF5awpqTBlu5iO4pgUVtoq/view?usp=share_link)
+| **Path**                                                     | **Description**                  |
+| ------------------------------------------------------------ | -------------------------------- |
+| [supplementary_material.pdf](https://drive.google.com/file/d/1fQTBCDFOWASF5awpqTBlu5iO4pgUVtoq/view?usp=sharing) | Supplementary file for IA-FaceS. |
+| [IA-FaceS_demo.mp4](https://drive.google.com/file/d/1Rc6Licj_Trch7kWQhspOzozeJ7jbJgtH/view?usp=sharing) | The video demo of IA-FaceS.      |
 
 ## Installation
 
@@ -41,9 +42,9 @@ docker pull huangwenjingcs/ubuntu18-conda-cuda11-pytorch1.7
 
 To obtain the CelebA-HQ dataset, please refer to the [Progressive GAN repository](https://github.com/tkarras/progressive_growing_of_gans). The official way of generating CelebA-HQ can be challenging. You can get the pre-generated dataset from [CelebA-HQ-dataset](https://drive.google.com/file/d/17wOT2Du1oKMU8DtRWupR_m1mgWvnGl1I/view?usp=sharing). Unzip the file and put the images to "data/CelebA-HQ-img/".
 
-To obtain the  Flickr-Faces-HQ Dataset (FFHQ), please refer to [ffhq-dataset](https://github.com/NVlabs/ffhq-dataset). Download the file and put the images to "data/ffhq-images1024/".
+To obtain the  Flickr-Faces-HQ Dataset (FFHQ), please refer to [ffhq-dataset](https://github.com/NVlabs/ffhq-dataset). Download the dataset and put the images to "data/ffhq-images1024/".
 
-Pre-trained models can be found on Google Drive:
+Pre-trained models can be found via the following links:
 
 | Path                                                         | Description                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------- |
@@ -53,7 +54,7 @@ Pre-trained models can be found on Google Drive:
 | ├  [iafaces-ffhq-1024.pth](https://drive.google.com/file/d/1DW6Ger9rSfHyn9mZabCWWfhhqfrdPJvY/view?usp=share_link) | IA-FaceS trained with FFHQ dataset at 1024×1024.        |
 | ├  [iafaces_cam-ffhq-1024.pth](https://drive.google.com/file/d/1czzv-3fWqHUbFCMT2TLTdM1bf6zuZ8WY/view?usp=share_link) | IA-FaceS-CAM trained with FFHQ dataset at 1024×1024.    |
 
-## Download 
+Download the pre-trained networks and put them to "checkpoints/".
 
 ## Train networks
 
