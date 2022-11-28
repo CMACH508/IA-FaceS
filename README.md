@@ -115,7 +115,7 @@ If you want to see details, please follow `iafaces-eval/README.md`.
 - Component transfer: MSE$_{\text{irr}}$, IFG, FID
 - Attribute manipulation:  MSE$_{\text{irr}}$, IFG,Arc-dis
 
-If you want to see details, please follow `evaluation/README.md`.
+If you want to see details, please follow `metrics/README.md`.
 
 ## Citation
 

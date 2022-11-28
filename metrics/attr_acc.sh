@@ -1,4 +1,4 @@
-FAKE=/path/to/attr manipulation
+FAKE=/path/to/edited
 
 list="0 1 4 6 16 24"
 for i in $list;
