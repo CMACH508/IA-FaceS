@@ -54,7 +54,7 @@ Pre-trained models can be found via the following links:
 | ├  [iafaces-ffhq-1024.pth](https://drive.google.com/file/d/1DW6Ger9rSfHyn9mZabCWWfhhqfrdPJvY/view?usp=share_link) | IA-FaceS trained with FFHQ dataset at 1024×1024.        |
 | ├  [iafaces_cam-ffhq-1024.pth](https://drive.google.com/file/d/1czzv-3fWqHUbFCMT2TLTdM1bf6zuZ8WY/view?usp=share_link) | IA-FaceS-CAM trained with FFHQ dataset at 1024×1024.    |
 
-Download the pre-trained networks and put them to "checkpoints/".
+Download the pre-trained networks and put them to "iafaces-evacheckpoints/".
 
 ## Train networks
 
@@ -82,32 +82,36 @@ CUDA_VISIBLE_DEVICES=0,1 python train.py -c configs/iafaces-celebahq-256.json --
 
 ---
 
+If you want to edit images using pre-trained models, go into the "iafaces-eval/" folder.
+
 For **attribute manipulation**, run:
 
 ```bash
-python attr_manipulation.py --attr <ATTRIBUTE> --data_path <IMAGE_LIST> --resume <CHECKPOINT>
+python attr_manipulation.py --attr <ATTRIBUTE> --data_path <DATA_LIST> --img_dir <IAMGE_DIR> --resume <CHECKPOINT>
 ```
 
 For **face component transfer**, run:
 
 ```bash
-python component_transfer.py --component <COMPONENT> --target <TARGET_LIST> --reference <REFERENCE_LIST> --resume <CHECKPOINT>
+python component_transfer.py --component <COMPONENT> --target <TARGET_LIST> --reference <REFERENCE_LIST> --img_dir <IAMGE_DIR> --resume <CHECKPOINT>
 ```
 
 For **image reconstruction**, run:
 
 ```bash
-python reconstruction.py --data_path <IMAGE_LIST> --resume <CHECKPOINT>
+python reconstruction.py --data_path <DATA_LIST> --img_dir <IAMGE_DIR> --resume <CHECKPOINT>
 ```
 
-
 The results are saved to `output/`.
+
+If you want to see details, please follow `iafaces-eval/README.md`.
 
 ## Metrics 
 
 ---
 
 - Reconstruction:  MSE, LPIPS, PSNR,SSIM, FID
+
 - Component transfer: MSE$_{\text{irr}}$, IFG, FID
 - Attribute manipulation:  MSE$_{\text{irr}}$, IFG,Arc-dis
 
