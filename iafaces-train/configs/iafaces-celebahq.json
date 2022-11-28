@@ -1,0 +1,83 @@
+{
+  "seed": 123,
+  "exp_id": "iafaces-celebahq",
+  "data_name": "celebahq",
+  "model_arch": "iafaces_256",
+  "encoder": {
+    "type": "Encoder",
+    "args": {
+      "channel": 32,
+      "img_size": 256,
+      "feats_dim": 256
+    }
+  },
+  "generator": {
+    "type": "Generator",
+    "args": {
+      "img_size": 256,
+      "style_dim": 1024
+    }
+  },
+  "discriminator": {
+    "type": "Discriminator",
+    "args": {
+      "size": 256
+    }
+  },
+  "data_set": {
+    "type": "CelebAHQDataset",
+    "args": {
+      "data_dir": "data/celebahq-lists",
+      "image_dir": "data/CelebA-HQ-img",
+      "image_size": [
+        256,
+        256
+      ]
+    }
+  },
+  "data_loader": {
+    "batch_size": 4,
+    "shuffle": true,
+    "num_workers": 2,
+    "num_samples": -1,
+    "num_val_samples": 2000
+  },
+  "loss": {
+    "g_loss_weight": 1,
+    "p_loss_weight": 1,
+    "d_loss_weight": 1,
+    "l1_loss_weight": 1,
+    "d_reg_every": 16,
+    "r1": 10
+  },
+  "optimizer_G": {
+    "lr": 0.002
+  },
+  "optimizer_D": {
+    "lr": 0.002
+  },
+  "lr_scheduler_D": {
+    "type": "ExponentialLR",
+    "args": {
+      "gamma": 0.99
+    }
+  },
+  "lr_scheduler_G": {
+    "type": "ExponentialLR",
+    "args": {
+      "gamma": 0.99
+    }
+  },
+  "trainer": {
+    "epochs": 200,
+    "update_ckpt": 2000,
+    "save_dir": "saved",
+    "save_period": 20,
+    "val_period": 1,
+    "log_period": 100,
+    "vis_img_num": 8,
+    "verbosity": 2,
+    "tensorboard": true,
+    "monitor": "min avg_mse"
+  }
+}
