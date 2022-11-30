@@ -21,9 +21,27 @@ python d_score.py --component <COMPONENET> --src <RECONSTRUCTIONS> --edit <EDITE
 # <COMPONENET> is used to define the component-irrelevant regions for calculating MSE$_{\text{irr}}$
 ```
 
+**Accuracy**
+
+First, download the pre-trained attribute classifiers from [stylegan2.pt](https://drive.google.com/file/d/1boSiIuC4qiCGcqy58svconr1MKVenn8t/view?usp=sharing) and put them to `classifiers/`.
+
+Second, install the requirements following [stylegan2](https://github.com/NVlabs/stylegan2).
+
+Finally, run:
+
+```bash
+python attr_acc.py --fake <EDITED FACES> --attr_idx <ATTRIBUTE INDEX>
+```
+
 **Arc-dis**
 
-First, download the pre-trained attribute classifiers from [stylegan2.pt](https://drive.google.com/file/d/1boSiIuC4qiCGcqy58svconr1MKVenn8t/view?usp=sharing) and put them to `classifires/`.
+First, install deepface as:
+
+```bash
+pip install deepface
+```
+
+Second, run:
 
 ```bash
 python arc_dis.py --fake <EDITED FACES> --attr <ATTRIBUTE> --real <RECONSTRUCTIONS> --method <MODEL NAME>

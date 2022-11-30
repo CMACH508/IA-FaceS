@@ -84,9 +84,19 @@ CUDA_VISIBLE_DEVICES=0,1 python train.py -c configs/iafaces-celebahq-256.json --
 
 If you want to edit images using pre-trained models, go into the "iafaces-eval/" folder.
 
-For **attribute manipulation**, run:
+For **attribute manipulation**, 
 
-```bash
+To compute the attribute direction, run:
+
+```
+# collect latent codes
+python collect_latent_codes.py --data_path <DATA_LIST> --img_dir <IAMGE_DIR> --resume <CHECKPOINT>
+python train_boundary.py --index <COMPONENT INDEX> --pose_attr <POSITIVE ATTRIBUTE> --neg_attr <NEGTIVE ATTRIBUTE> --expr <EXP ID>
+```
+
+To edit face attribute, run:
+
+```
 python attr_manipulation.py --attr <ATTRIBUTE> --data_path <DATA_LIST> --img_dir <IAMGE_DIR> --resume <CHECKPOINT>
 ```
 
@@ -110,10 +120,10 @@ If you want to see details, please follow `iafaces-eval/README.md`.
 
 ---
 
-- Reconstruction:  MSE, LPIPS, PSNR,SSIM, FID
+- Reconstruction:  MSE, LPIPS, PSNR, SSIM, FID
 
 - Component transfer: MSE$_{\text{irr}}$, IFG, FID
-- Attribute manipulation:  MSE$_{\text{irr}}$, IFG,Arc-dis
+- Attribute manipulation:  MSE$_{\text{irr}}$, IFG, Arc-dis
 
 If you want to see details, please follow `metrics/README.md`.
 

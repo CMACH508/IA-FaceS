@@ -1,8 +1,5 @@
 FAKE=/path/to/edited
 
-list="0 1 4 6 16 24"
-for i in $list;
-do
-python attr_accuracy.py --fake $FAKE --attr_idx $i;
-done
+python attr_acc.py --fake $FAKE --attr_idx <ATTRIBUTE INDEX>;
+
 
