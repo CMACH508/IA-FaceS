@@ -14,7 +14,7 @@ python eval_recon.py --real <REAL FACES> --fake <RECONSTRUCTIONS> -bz <BATCH SIZ
 
 **MSE$_{\text{irr}}$, IFG**
 
-First, download the pre-trained StyleGAN2 discriminator from [stylegan2.pt](https://drive.google.com/file/d/1boSiIuC4qiCGcqy58svconr1MKVenn8t/view?usp=sharing) and put it to `checkpoint/latest.pt`
+First, download the pre-trained StyleGAN2 discriminator from [latest.pt](https://drive.google.com/file/d/1boSiIuC4qiCGcqy58svconr1MKVenn8t/view?usp=sharing) and put it to `checkpoint/latest.pt`
 
 ```bash
 python d_score.py --component <COMPONENET> --src <RECONSTRUCTIONS> --edit <EDITED FACES>
@@ -25,7 +25,7 @@ python d_score.py --component <COMPONENET> --src <RECONSTRUCTIONS> --edit <EDITE
 
 First, download the pre-trained attribute classifiers from [classifiers.zip](https://pan.baidu.com/s/18ZH3ctb918Fwvp6Yv45GWg?pwd=jshr) and put them to `classifiers/`.
 
-Second, install the requirements following [stylegan2](https://github.com/NVlabs/stylegan2).
+Second, install the requirements following [stylegan](https://github.com/NVlabs/stylegan).
 
 Finally, run:
 
