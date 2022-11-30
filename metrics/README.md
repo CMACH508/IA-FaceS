@@ -23,7 +23,7 @@ python d_score.py --component <COMPONENET> --src <RECONSTRUCTIONS> --edit <EDITE
 
 **Accuracy**
 
-First, download the pre-trained attribute classifiers from [stylegan2.pt](https://drive.google.com/file/d/1boSiIuC4qiCGcqy58svconr1MKVenn8t/view?usp=sharing) and put them to `classifiers/`.
+First, download the pre-trained attribute classifiers from [classifiers.zip](https://pan.baidu.com/s/18ZH3ctb918Fwvp6Yv45GWg?pwd=jshr) and put them to `classifiers/`.
 
 Second, install the requirements following [stylegan2](https://github.com/NVlabs/stylegan2).
 
